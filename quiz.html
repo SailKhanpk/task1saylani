@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Application Form</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Quiz Application Form</h2>
+        <form id="quizForm" action="#" method="post">
+            <div class="form-group">
+                <label for="heading">Heading for Quiz Application:</label>
+                <input type="text" id="heading" name="heading" required>
+            </div>
+            <div class="form-group">
+                <label for="topic">Topic for the Quiz:</label>
+                <input type="text" id="topic" name="topic" required>
+            </div>
+
+            <h3>Questions:</h3>
+
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. What is the capital of Pakistan?</p>
+                <input type="radio" id="q1-option1" name="q1" value="Islamabad" required>
+                <label for="q1-option1">Islamabad</label><br>
+                <input type="radio" id="q1-option2" name="q1" value="Karachi">
+                <label for="q1-option2">Karachi</label><br>
+                <input type="radio" id="q1-option3" name="q1" value="Lahore">
+                <label for="q1-option3">Lahore</label><br>
+                <input type="radio" id="q1-option4" name="q1" value="Multan">
+                <label for="q1-option4">Multan</label><br>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+               
+                 <p>2. Who was the founder of Pakistan?</p>
+                <input type="radio" id="q2-option1" name="q2" value="Muhammad Ali Jinnah" required>
+                <label for="q2-option1">Muhammad Ali Jinnah</label><br>
+                <input type="radio" id="q2-option2" name="q2" value="
+                Allama Iqbal">
+                <label for="q2-option2">
+                    Allama Iqbal</label><br>
+                <input type="radio" id="q2-option3" name="q2" value="Sir Syed Ahmed Khan">
+                <label for="q2-option3">Sir Syed Ahmed Khan</label><br>
+                <input type="radio" id="q2-option4" name="q2" value="Liaquat Ali Khan">
+                <label for="q2-option4">Liaquat Ali Khan</label><br>
+            </div>
+            <div class="question">
+               
+                 <p>3. Which historical site in Pakistan is considered a UNESCO World Heritage Site?</p>
+                <input type="radio" id="q3-option1" name="q3" value="Taxila" required>
+                <label for="q3-option1">Taxila</label><br>
+                <input type="radio" id="q3-option2" name="q3" value="
+                Harappa">
+                <label for="q3-option2">
+                    Harappa</label><br>
+                <input type="radio" id="q3-option3" name="q3" value="Mohenjo-Daro">
+                <label for="q3-option3">Mohenjo-Daro</label><br>
+                <input type="radio" id="q3-option4" name="q3" value="Makli Necropolis">
+                <label for="q3-option4">Makli Necropolis</label><br>
+            </div>
+            <div class="question">
+               
+                 <p>4. Which city is known as the “City of Flower” in Pakistan?</p>
+                <input type="radio" id="q4-option1" name="q4" value="Islamabad" required>
+                <label for="q4-option1">Islamabad</label><br>
+                <input type="radio" id="q4-option2" name="q4" value="
+                Karachi">
+                <label for="q4-option2">
+                    Karachi</label><br>
+                <input type="radio" id="q4-option3" name="q4" value="Lahore">
+                <label for="q4-option3">Lahore</label><br>
+                <input type="radio" id="q4-option4" name="q4" value=" Peshawar">
+                <label for="q4-option4">Peshawar</label><br>
+            </div>
+            <div class="question">
+               
+                 <p>5. When was Pakistan created?</p>
+                <input type="radio" id="q5-option1" name="q5" value="14th August 1947" required>
+                <label for="q5-option1">14th August 1947</label><br>
+                <input type="radio" id="q5-option2" name="q5" value="
+                23rd March 1940">
+                <label for="q5-option2">
+                    23rd March 1940</label><br>
+                <input type="radio" id="q5-option3" name="q5" value="27th December 1949">
+                <label for="q5-option3">27th December 1949</label><br>
+                <input type="radio" id="q5-option4" name="q5" value="3rd June 1948">
+                <label for="q5-option4">3rd June 1948</label><br>
+            </div>
+
+            <!-- Add more questions similarly -->
+
+            <div class="form-group">
+                <!-- <input type="submit" value="Submit Quiz"> -->
+                <button type="submit"><a href="result.html"> Submit</a></button>
+            </div>
+        </form>
+
+
+    <div class="container">
+        <h2>Quiz Results</h2>
+        <p>Total Marks: <span id="totalMarks"></span></p>
+    </div>
+
+
+    </div>
+
+
+    <script src="results.js"></script>
+    <script src="quiz.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
